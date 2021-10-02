@@ -12,7 +12,7 @@ This pipeline uses the nextflow manager and conda environment, please install ne
 * Create a working directory where you want to save the code.
 * Clone the code from GitHub to working directory
  ```
-#git GitHub-
+git clone https://github.com/risharasheed/NIM-Mseq.git
 ```
 
 ## Build Conda environment 
