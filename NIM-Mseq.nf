@@ -13,7 +13,7 @@ demultiplex_ch1 = Channel
 if(params.Demultiplex == true){
 process Demultiplex {
 	
-	publishDir "$outputDir/posrchop_out", mode: "copy", pattern: "*"
+	publishDir "$outputDir/porechop_out", mode: "copy", pattern: "*"
 	 
     output:
     file ("BC*.fastq")  into demultiplex_ch
