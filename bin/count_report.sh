@@ -73,3 +73,4 @@ if [ "$(ls -A $blastn_f)" ]; then
 fi
 
 python ${projDir}/countReport.py -init ${count_report}/porchop_cnt.txt -kra ${count_report}/kraken_cnt.txt -silva ${count_report}/bwa_silva_cnt.txt  -human ${count_report}/bwa_human_cnt.txt -blast ${count_report}/blast_cnt.txt -blastf ${count_report}/blast_full_cnt.txt  -inref ${count_report}/reffile -outDir ${count_report}
+python ${projDir}/reportBarChart.py -inFile ${count_report}/countReport -outDir ${count_report} -prefix 'countBarChart'
