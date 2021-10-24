@@ -3,8 +3,7 @@ echo Current Date and Time is: `date +"%Y-%m-%d %T"`
 args=("$@")
 outputDir=${args[0]}
 projDir=${args[1]}
-#outputDir="/home/risha_rasheed88/output/nextflow/run1"
-#projDir="/home/risha_rasheed88/nextflow/NIM-Mseq/bin"
+
 #
 map_name="heatMap"
 heatmap_report="${outputDir}/heatmap"
