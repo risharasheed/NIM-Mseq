@@ -341,10 +341,8 @@ process Consensus {
 	   echo "report" > report	
 	 """
 }
-report_ch = collect_ch
-      .collectFile()
-
 }
+
 if(params.kraken2_DB2 == true ){
 process Classification_Kraken2_DB2 {
 	 label 'NIMMseq'
@@ -377,10 +375,6 @@ if(params.final_report == true ){
 process Final_report {
 	 label 'NIMMseq'
 	 
-     tag {datasetID}
-	 
-	  
-	 
 	 input:
 	 file 'report' from collect_ch.collect()
 	 	  
@@ -388,7 +382,6 @@ process Final_report {
      """
 		bash ${projDir}/heatmap.sh  ${outputDir} ${projDir}
 		bash ${projDir}/count_report.sh  ${outputDir} ${projDir}
-		
 		
 	 """
 }
