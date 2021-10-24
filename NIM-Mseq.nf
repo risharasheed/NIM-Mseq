@@ -257,7 +257,7 @@ if (params.mapping_process == true){
 process Alignment_Minimap2  {
 	 label 'NIMMseq'
 
-     publishDir "$outputDir/Alignment_Out", mode: "copy", pattern: "${datasetID}.*"
+     publishDir "$outputDir/Alignment_Out", mode: "copy", pattern: "${datasetID}.m*"
 	 
      tag {datasetID}
 	 
@@ -331,16 +331,18 @@ process Consensus {
 	 output:
 	 set datasetID, file("${inFastq}"), file("${datasetID}_cons_mpiled.vcf"), file("${datasetID}_consensus.fasta") into consensus_out
 	 set datasetID, file("${inFastq}") into Kraken_db2
+	 file  'report' into collect_ch
+	 
 	 script:
      """
    	   samtools mpileup -uf ${datasetID}_ntref.fasta ${datasetID}.newsort.bam | bcftools call -c -o ${datasetID}_cons_mpiled.vcf
 	   cat ${datasetID}_cons_mpiled.vcf  | vcfutils.pl vcf2fq > ${datasetID}_consensus.fastq
 	   seqtk seq -a ${datasetID}_consensus.fastq > ${datasetID}_consensus.fasta
-			   
+	   echo "report" > report	
 	 """
 }
-
 }
+
 if(params.kraken2_DB2 == true ){
 process Classification_Kraken2_DB2 {
 	 label 'NIMMseq'
@@ -365,6 +367,22 @@ process Classification_Kraken2_DB2 {
 		cat ${datasetID}.kraken | cut -f 2,3 >  ${datasetID}.krona.input 
 		ktImportTaxonomy  ${datasetID}.krona.input  -o ${datasetID}_krona.html
 	    
+	 """
+}
+
+}
+if(params.final_report == true ){
+process Final_report {
+	 label 'NIMMseq'
+	 
+	 input:
+	 file 'report' from collect_ch.collect()
+	 	  
+	 script:
+     """
+		bash ${projDir}/heatmap.sh  ${outputDir} ${projDir}
+		bash ${projDir}/count_report.sh  ${outputDir} ${projDir}
+		
 	 """
 }
 
