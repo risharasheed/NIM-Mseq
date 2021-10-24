@@ -3,8 +3,6 @@ echo Current Date and Time is: `date +"%Y-%m-%d %T"`
 args=("$@")
 outputDir=${args[0]}
 projDir=${args[1]}
-#outputDir="/home/risha_rasheed88/output/nextflow/test"
-#projDir="/home/risha_rasheed88/nextflow/gitHub/bin"
 
 porchop="${outputDir}/porechop_out/BC*.fastq"
 bwa_human="${outputDir}/BWA_Human/*_combined_human_un_count.file"
