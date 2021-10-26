@@ -102,7 +102,7 @@ def combineReport(inRef, krakend, silva, human,blastf,blast,initcnt):
     fofn_ref=''
     fofn=''
 	
-    headline = "\t".join(("SampleID", "fastq count", "Nanofilt count", "Human unmapped ","Human mapped", "Silva mapped", "Silva unmapped","Blast result count", "Blast count after filter","Kraken Classified","Kraken Unclassified"))
+    headline = "\t".join(("SampleID", "fastq count", "Nanofilt count", "Human unmapped","Human mapped", "Silva mapped", "Silva unmapped","Blast result count", "Blast count after filter","Kraken Classified","Kraken Unclassified"))
     fofn+='{0}\n'.format(headline)
     refFile = open(inRef, 'r')
     lines = refFile.readlines()
