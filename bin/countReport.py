@@ -76,7 +76,7 @@ def silvaCnt(silvaf):
         Stemp = line.split("\t")
 
         accID = Stemp[3]
-        silvatxt = "\t".join((Stemp[0],Stemp[1]))
+        silvatxt = "\t".join((Stemp[1],Stemp[0]))
         silva.setdefault(accID, silvatxt)
 
     silvafl.close()
@@ -102,7 +102,7 @@ def combineReport(inRef, krakend, silva, human,blastf,blast,initcnt):
     fofn_ref=''
     fofn=''
 	
-    headline = "\t".join(("SampleID", "fastq count", "Nanofilt count", "Human unmapped","Human mapped", "Silva mapped", "Silva unmapped","Blast result count", "Blast count after filter","Kraken Classified","Kraken Unclassified"))
+    headline = "\t".join(("SampleID", "Total reads", "Nanofilt count", "Human unmapped","Human mapped", "Silva mapped", "Silva unmapped","Blast result count", "Blast count after filter","Kraken Classified","Kraken Unclassified"))
     fofn+='{0}\n'.format(headline)
     refFile = open(inRef, 'r')
     lines = refFile.readlines()
