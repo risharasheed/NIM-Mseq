@@ -7,10 +7,10 @@ import seaborn as sns
 
 def drawReportChart(inFile,prefix):
     with open(inFile) as reads:                                                                                          
-    	df = pd.read_csv(reads, delimiter='\t')
+    	dataset = pd.read_csv(reads, delimiter='\t')
     fastq_cnt    = pd.DataFrame({'total':dataset['fastq count'],'label':'Total Read','barcode':dataset['SampleID']})
     nan_filt     = pd.DataFrame({'total':dataset['Nanofilt count'],'label':'Nanofilt count','barcode':dataset['SampleID']})
-    human_un     = pd.DataFrame({'total':dataset['Human_unmap '],'label':'Human unmapped'})
+    human_un     = pd.DataFrame({'total':dataset['Human_unmap'],'label':'Human unmapped'})
     human_map    = pd.DataFrame({'total':dataset['Human mapped'],'label':'Human mapped','barcode':dataset['SampleID']})
     silva_map    = pd.DataFrame({'total':dataset['Silva mapped'],'label':'Silva mapped','barcode':dataset['SampleID']})
     silva_unmap  = pd.DataFrame({'total':dataset['Silva unmapped'],'label':'Silva unmapped','barcode':dataset['SampleID']} )
