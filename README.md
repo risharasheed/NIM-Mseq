@@ -18,9 +18,9 @@ git clone https://github.com/risharasheed/NIM-Mseq.git
 ## Build Conda environment 
 * Use the [link](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) to build the conda environment and install the all packages based on the dependent list from the software/tool table below, or follow the below steps to build the conda environment from file.  
 - Use the terminal or an Anaconda Prompt for the following steps:
-     - Copy the environmnet **environment.txt**  file to your working directory
-     - Create the environment from the **environment.txt** file
-     -  ```   conda create --name NIM-Mseq --file environment.txt   ```
+     - Copy the environmnet **environment.yml**  file to your working directory
+     - Create the environment from the **environment.yml** file
+     -  ```   conda env create -f environment.yml   ```
      -  Activate the new environment: 
      -  ``` conda activate NIM-Mseq ```
      -  Verify that the new environment was installed correctly:  
@@ -33,6 +33,7 @@ git clone https://github.com/risharasheed/NIM-Mseq.git
      * Build the BWA index using BWA command 
      * ``` bwa index -a bwtsw  hg19_reference/hg19_exome.fa  ```   
      * hg19_reference/hg19_exome.fa  is your downloaded GRCh37.
+     * host enviroment databse, in this process we used human databse.
 * Silva DB
      * Download the silva db from [here](https://www.arb-silva.de/download/arb-files/)
      * unzip the fasta file
@@ -64,7 +65,7 @@ BLASTDB="$BLASTDB:/../blast_db/nt/"       - This is same as blast database excep
 ## Run the pipeline
 once the next flow configure is completed, use the below command to run the pipeline. to bypass any process from the pipeline, use the config file to set *false* for that process.
 ```
-nextfloe run NIM-Mseq
+nextflow run NIM-Mseq.nf -with-trace -with-timeline
 ```
 once the process is completed you will see the output like below.
 ![Image of run output](https://github.com/rishaashraf/hello-wold/blob/main/run4%20completed.png)
@@ -72,16 +73,7 @@ once the process is completed you will see the output like below.
 #### output directory structure 
 ![Image of run output directory](https://github.com/risharasheed/hello-wold/blob/main/Folder_structure.png)
 
-## Build heatmap
-once the pipeline is completed run the heatmap.sh bash file to create the heatmap of all barcoded dataset.
-```
-bash heatmap.sh
-```
-## Build count report.
-once the pipeline is completed run the countreport.sh bash file to create the count report for the run of all barcoded dataset.
-```
-bash countreport.sh
-```
+
 ## Software/tools used in NIM-Mseq
 |Software	|Version or higher	|Link
 |---------|  ------|----
