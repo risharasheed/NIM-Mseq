@@ -1,0 +1,23 @@
+name: NIM-Mseq
+
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.7
+  - porechop
+  - nanoplot
+  - nanofilt
+  - bwa
+  - samtools
+  - kraken2
+  - seqtk
+  - blast
+  - minimap2
+  - bcftools
+  - r
+  - krona
+  - r-plyr
+  - r-dplyr
