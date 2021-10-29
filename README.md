@@ -63,7 +63,7 @@ projDir = "../nextflow/bin"               - This is the directory in which the b
 BLASTDB="$BLASTDB:/../blast_db/nt/"       - This is same as blast database except the last nt to get details for taxomic information from blast
 ```
 ## Run the pipeline
-once the next flow configure is completed, use the below command to run the pipeline. to bypass any process from the pipeline, use the config file to set *false* for that process.
+once the next flow configure is completed, use the below command to run the pipeline. to bypass any process from the pipeline, use the config file to set *false * for that process.
 ```
 nextflow run NIM-Mseq.nf -with-trace -with-timeline
 ```
