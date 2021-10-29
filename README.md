@@ -68,6 +68,7 @@ once the next flow configure is completed, use the below command to run the pipe
 nextflow run NIM-Mseq.nf -with-trace -with-timeline
 ```
 once the process is completed you will see the output like below.
+
 ![Image of run output](https://github.com/risharasheed/NIM-Mseq/blob/main/images/NIM-Mseq-final-stscreen.png)
 
 #### output directory structure 
