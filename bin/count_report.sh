@@ -50,7 +50,7 @@ if [ "$(ls -A $kraken)" ]; then
    do
      fname="$(basename ${eachfile})"
 	 barcode=${fname:0:$len}
-	 head -2 ${eachfile} | awk '{print $2"\t"}' |awk '{rec = rec $0} END{print rec}' | awk -v z=${barcode} '{sub(/$/,z)} {print}' >> ${count_report}/kraken_cnt.txt
+	 head -2 ${eachfile} | awk 'NR==1 { if ($6 =="unclassified" ) print $2"\t"; else if ($6 =="root" ) print "0\t\n"$2"\t"; else 	print "0\t0\t";} NR==2 {if  ($6=="root") print$2"\t";}'   |awk '{rec = rec $0} END{print rec}' | awk -v z=${barcode} '{sub(/$/,z)} {print}' >> ${count_report}/kraken_cnt.txt
 	done
 fi
 
