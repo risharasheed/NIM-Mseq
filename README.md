@@ -65,7 +65,7 @@ BLASTDB="$BLASTDB:/../blast_db/nt/"       - This is same as blast database excep
 ## Run the pipeline
 once the next flow configure is completed, use the below command to run the pipeline. to bypass any process from the pipeline, use the config file to set *false* for that process.
 ```
-nextflow run NIM-Mseq.nf -with-trace -with-timeline
+nextflow run NIM-Mseq.nf -with-report
 ```
 once the process is completed you will see the output like below.
 
