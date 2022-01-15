@@ -78,16 +78,16 @@ once the process is completed you will see the output like below.
 ## Software/tools used in NIM-Mseq
 |Software	|Version or higher	|Link
 |---------|  ------|----
-|porechop	|5.0.11	|[porechop](https://github.com/rrwick/Porechop)
-|nanoplot	|1.32.1	|[nanoplot](https://github.com/wdecoster/NanoPlot)
+|Porechop	|5.0.11	|[porechop](https://github.com/rrwick/Porechop)
+|NanoPlot	|1.32.1	|[nanoplot](https://github.com/wdecoster/NanoPlot)
 |nanofilt	|2.8	|[nanofilt](https://github.com/wdecoster/nanofilt)
 |bwa	|0.7.17	|[BWA](https://github.com/lh3/bwa)
 |samtools	|1.7	|[samtools](http://www.htslib.org/)
 |kraken2	|2.0.7	|[kraken](https://github.com/DerrickWood/kraken2)
 |seqtk	|1.3	|[seqtk](https://github.com/lh3/seqtk)
-|blast	|2.10.1	|[blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
+|Blast	|2.10.1	|[blast](https://blast.ncbi.nlm.nih.gov/Blast.cgi)
 |minimap2	|2.21	|[minimap](https://github.com/lh3/minimap2)
-|krona	|2.8	|[krona](https://github.com/marbl/Krona/wiki)
+|Krona	|2.8	|[krona](https://github.com/marbl/Krona/wiki)
 |bcftools|	1.9	|[bcftools](http://samtools.github.io/bcftools/bcftools.html)
 |nextflow	|30	|[nextflow](https://www.nextflow.io/docs/latest/getstarted.html)
 |Python	|3.7	|[python](https://www.python.org/)
