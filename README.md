@@ -71,9 +71,6 @@ once the process is completed you will see the output like below.
 
 ![Image of run output](https://github.com/risharasheed/NIM-Mseq/blob/main/images/NIM-Mseq-final-stscreen.png)
 
-#### output directory structure 
-![Image of run output directory](https://github.com/risharasheed/hello-wold/blob/main/Folder_structure.png)
-
 
 ## Software/tools used in NIM-Mseq
 |Software	|Version or higher	|Link
