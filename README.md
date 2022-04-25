@@ -94,7 +94,7 @@ once the process is completed you will see the output like below.
 |R	|3.5	|[R](https://www.r-project.org/)
 
 
-#### Common error can occur  
+#### Common errors  
  * There is a possibility to fail quality process due to python seaborn package issue. Hence please verify the seaborn package is 0.10.1. if it uses latest one then replaces  the latest one with 0.10.1 in specific conda environment python library.
  * The krona report steps may be give error like #Loading taxonomy...  #Taxonomy not found in /home/user/. miniconda3/envs/NIM-Mseq/opt/krona/taxonomy.  In this case, please  run the command updaeTaxonomy.sh   from your krona directory. 
 ```
@@ -109,5 +109,11 @@ sudo apt-get install build-essential
 * The pipeline is setup to run one file at a time in a single process due to space constrain, if you have more RAM then change the value of maxForks in nextflow scripts  
 
 
-
+#### References
+1.	De Coster, W. et al. (2018) ‘NanoPack: Visualizing and processing long-read sequencing data’, Bioinformatics, 34(15), pp. 2666–2669. doi: 10.1093/bioinformatics/bty149.
+2.	Li, H. (2013) ‘Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM’, 00(00), pp. 1–3. Available at: http://arxiv.org/abs/1303.3997.
+3.	Li, H. (2018) ‘Minimap2: Pairwise alignment for nucleotide sequences’, Bioinformatics, 34(18), pp. 3094–3100. doi: 10.1093/bioinformatics/bty191.
+4.	Quast, C. et al. (2013) ‘The SILVA ribosomal RNA gene database project: Improved data processing and web-based tools’, Nucleic Acids Research, 41(D1), pp. 590–596. doi: 10.1093/nar/gks1219.
+5.	Sayers, E. W. et al. (2021). Database resources of the National Center for Biotechnology Information. Nucleic acids research, 49(D1), D10–D17. https://doi.org/10.1093/nar/gkaa892
+6.	Wood, D. E., Lu, J. and Langmead, B. (2019) ‘Improved metagenomic analysis with Kraken 2’, bioRxiv. Genome Biology, pp. 1–13. doi: 10.1101/762302.
 
