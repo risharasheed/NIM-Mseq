@@ -63,7 +63,7 @@ projDir = "../nextflow/bin"               - This is the directory in which the b
 BLASTDB="$BLASTDB:/../blast_db/nt/"       - This is same as blast database except the last nt to get details for taxomic information from blast
 ```
 ## Run the pipeline
-once the next flow configure is completed, use the below command to run the pipeline. to bypass any process from the pipeline, use the config file to set *false* for that process. In this pipeline we have used Porechop as the demultiplexer/barcode.  Likewise based on the requirement alternate demultiplexer can be integrated to the pipeline and use. In our study we have used both Porechop and Guppy.   To integrate Guppy please use [nanopore community]( https://nanoporetech.com/) and [download](  https://community.nanoporetech.com/downloads) the software.  
+Once the next flow configure is completed, use the below command to run the pipeline. to bypass any process from the pipeline, use the config file to set *false* for that process. In this pipeline we have used Porechop as the demultiplexer/barcode.  Likewise based on the requirement alternate demultiplexer can be integrated to the pipeline and used. In our study we have used both Porechop and Guppy.   To integrate Guppy please use [nanopore community]( https://nanoporetech.com/) and [download](  https://community.nanoporetech.com/downloads) the software.  
 ```
 nextflow run NIM-Mseq.nf -with-report
 ```
