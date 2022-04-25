@@ -92,8 +92,8 @@ once the process is completed you will see the output like below.
 
 
 #### Common errors  
- * There is a possibility to fail quality process due to python seaborn package issue. Hence please verify the seaborn package is 0.10.1. if it uses latest one then replaces  the latest one with 0.10.1 in specific conda environment python library.
- * The krona report steps may be give error like #Loading taxonomy...  #Taxonomy not found in /home/user/. miniconda3/envs/NIM-Mseq/opt/krona/taxonomy.  In this case, please  run the command updaeTaxonomy.sh   from your krona directory. 
+ * There is a possibility to fail quality process due to python seaborn package issue. Hence please verify the seaborn package is 0.10.1. if it uses latest one then replace the latest one with 0.10.1 in specific conda environment python library.
+ * The krona report steps may give error like #Loading taxonomy...  #Taxonomy not found in /home/user/. miniconda3/envs/NIM-Mseq/opt/krona/taxonomy.  In this case, please  run the command updaeTaxonomy.sh   from your krona directory. 
 ```
 bash /home/user/anoconda3/envs/NIM-Mseq/opt/krona/updateTaxonomy.sh  
 ```
@@ -102,7 +102,7 @@ bash /home/user/anoconda3/envs/NIM-Mseq/opt/krona/updateTaxonomy.sh
 sudo apt-get install build-essential
 ```
 * Then run the updateTaxonomy.sh again.
-* Any step is faling without proper error then try to increase the RAM and rerun. 
+* Any step is failing without proper error then try to increase the RAM and rerun. 
 * The pipeline is setup to run one file at a time in a single process due to space constrain, if you have more RAM then change the value of maxForks in nextflow scripts  
 
 
