@@ -113,4 +113,5 @@ sudo apt-get install build-essential
 4.	Quast, C. et al. (2013) ‘The SILVA ribosomal RNA gene database project: Improved data processing and web-based tools’, Nucleic Acids Research, 41(D1), pp. 590–596. doi: 10.1093/nar/gks1219.
 5.	Sayers, E. W. et al. (2021). Database resources of the National Center for Biotechnology Information. Nucleic acids research, 49(D1), D10–D17. https://doi.org/10.1093/nar/gkaa892
 6.	Wood, D. E., Lu, J. and Langmead, B. (2019) ‘Improved metagenomic analysis with Kraken 2’, bioRxiv. Genome Biology, pp. 1–13. doi: 10.1101/762302.
+7.	Xu, Y., Yang-Turner, F., Volk, D., & Crook, D. (2020). NanoSPC: a scalable, portable, cloud compatible viral nanopore metagenomic data processing pipeline. Nucleic acids research, 48(W1), W366–W371. https://doi.org/10.1093/nar/gkaa413
 
