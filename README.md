@@ -105,7 +105,6 @@ sudo apt-get install build-essential
 * Any step is failing without proper error then try to increase the RAM and rerun. 
 * The pipeline is setup to run one file at a time in a single process due to space constrain, if you have more RAM then change the value of maxForks in nextflow scripts  
 
-
 #### References
 1.	De Coster, W. et al. (2018) ‘NanoPack: Visualizing and processing long-read sequencing data’, Bioinformatics, 34(15), pp. 2666–2669. doi: 10.1093/bioinformatics/bty149.
 2.	Li, H. (2013) ‘Aligning sequence reads, clone sequences and assembly contigs with BWA-MEM’, 00(00), pp. 1–3. Available at: http://arxiv.org/abs/1303.3997.
