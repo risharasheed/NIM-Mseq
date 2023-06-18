@@ -1,4 +1,4 @@
-task_id	hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
+task_id hash	native_id	name	status	exit	submit	duration	realtime	%cpu	peak_rss	peak_vmem	rchar	wchar
 1	6b/bb1a4c	21771	Demultiplex	COMPLETED	0	2021-10-26 16:25:39.874	3m 17s	3m 17s	695.2%	857.2 MB	2.2 GB	103.8 MB	98 MB
 2	c4/6397f4	24595	Filter_NanoFilt (BC01)	COMPLETED	0	2021-10-26 16:28:57.043	2.2s	2.1s	31.6%	49.8 MB	361.9 MB	9.8 MB	296.1 KB
 9	e7/d2e02c	24677	Filter_NanoFilt (BC05)	COMPLETED	0	2021-10-26 16:28:57.063	2.2s	2.1s	32.8%	49.4 MB	361.9 MB	10.2 MB	720.8 KB
