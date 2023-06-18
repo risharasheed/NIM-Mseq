@@ -166,4 +166,4 @@ if __name__ == "__main__":
     fofn= combineReport(params.inref, krakend, silva, human,blastf,blast,initcnt)
     writeFofn(fofn)
 
-    
+   
