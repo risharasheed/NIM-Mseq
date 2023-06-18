@@ -1,4 +1,4 @@
-name: NIM-Mseq 
+name: NIM-Mseq
 
 channels:
   - bioconda
