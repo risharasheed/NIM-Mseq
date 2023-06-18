@@ -57,7 +57,7 @@ def reportMapReads(inFile, splID):
 	with open("{0}.mapStats".format(splID), 'w') as outF:
 		outF.write(fofn)
 
-
+#main section
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='write aligned reads')
     
