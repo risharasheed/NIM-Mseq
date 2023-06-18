@@ -3,7 +3,7 @@
 println "NIM-Mseq(Nanopore Informatics for Metagenomics of Microbial sequences) - Taxonomic classification, similarity search and reference-based assembly of microbial sequences"
 println " "
 println "Risha rasheed                             "
-println "*********************************************************************"
+println "**********************************************************************"
 
 
 inputfile = params.inputDir
