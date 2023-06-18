@@ -3,7 +3,7 @@ rm(list=ls())
 library(plyr)
 library(dplyr)
 
-##################################  ###################################
+##################################  ####################################
 reportIdentity <- function (inFile, splID) {
 
 idnData <- read.delim(inFile, header= TRUE, sep="\t")
